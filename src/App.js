@@ -69,12 +69,22 @@ function App() {
     setCurrentMove(nextHistory.length - 1);
   }
 
+  function handleNewGame() {
+    setHistory([Array(9).fill(null)]);
+    setCurrentMove(0);
+  }
+
   return (
-    <div className="game">
+    <div className="game-board-container">
       <div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-      </div>
     </div>
+    <div className="game-controls">
+     <button className="new-game" onClick={handleNewGame}>
+        Mulai Game Baru
+     </button>
+    </div>
+  </div>
   );
 }
 

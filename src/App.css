@@ -15,3 +15,21 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+.game-board-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Jarak antara board dan tombol */
+}
+
+.game-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-game {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
